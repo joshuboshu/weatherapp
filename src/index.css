@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dark {
+    background-color: #1a202c; /* Fondo oscuro */
+    color: #e2e8f0; /* Texto claro */
+  }
+  
+  input::placeholder {
+    color: #a0aec0; /* Placeholder en modo claro */
+  }
+  
+  .dark input::placeholder {
+    color: #4a5568; /* Placeholder en modo oscuro */
+  }
+  
+  button {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4c51bf; /* Color de hover en modo claro */
+  }
+  
+  .dark button:hover {
+    background-color: #2b2d3f; /* Color de hover en modo oscuro */
+  }
+  
+  .weather-card {
+    background-color: #f7fafc; /* Fondo claro para el componente del clima */
+    color: #1a202c; /* Texto oscuro para el componente del clima */
+  }
+  
+  .dark .weather-card {
+    background-color: #2d3748; /* Fondo oscuro para el componente del clima en modo oscuro */
+    color: #edf2f7; /* Texto claro para el componente del clima en modo oscuro */
+  }
+  
+  .dark-mode-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4a5568; /* Fondo oscuro del botón */
+    color: #e2e8f0; /* Color del icono en modo oscuro */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark .dark-mode-button {
+    background-color: #2d3748; /* Fondo del botón en modo oscuro */
+    color: #edf2f7; /* Color del icono en modo oscuro */
+  }
+  
+  .dark-mode-button:hover {
+    background-color: #2b2d3f; /* Color de hover en modo oscuro */
+  }
