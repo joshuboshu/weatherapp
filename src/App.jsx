@@ -9,7 +9,7 @@ function App() {
   const [location, setLocation] = useState("");
   const [darkMode, setDarkMode] = useState(false);
 
-  const API_KEY = `98563794e7a0ef76a6385ae279547f96`;
+  const API_KEY = ``; // Agrega la api key
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${API_KEY}`;
 
   const searchLocation = (event) => {
